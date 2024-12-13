@@ -27,6 +27,37 @@
   background: #f1f1f1;
 }
 
+.socialLinks {
+  position: fixed;
+  bottom: 100px;
+  left: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-out;
+}
+
+.mainHomeContent {
+  padding: 5rem 2rem;
+}
+
+.headerHome {
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 5rem;
+}
+
+.homeDescription {
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  font-weight: 350;
+}
+
 nav {
   display: flex;
   position: relative;
@@ -54,7 +85,7 @@ nav {
   color: #fff;
 }
 
-.name {
+.lefHeaderName {
   font-size: 1.3rem;
   color: #fff;
   margin-left: 0.5rem;
@@ -76,7 +107,7 @@ nav {
   color: yellow;
 }
 
-.searchinput {
+.searchInput {
   width: 15rem;
   border: none;
   outline: none;
@@ -93,7 +124,7 @@ nav {
   border-radius: 20px;
 }
 
-.searchicon {
+.searchIcon {
   color: rgb(5, 103, 107);
 }
 
@@ -107,9 +138,7 @@ nav {
   margin-left: 0.3rem;
 }
 
-/* Home Section */
-
-.MainSection {
+.mainSection {
   margin-top: 5rem;
   width: 100%;
   height: auto;
@@ -121,12 +150,12 @@ nav {
   align-items: flex-start;
 }
 
-.mainpage {
+.mainPage {
   display: flex;
   flex-direction: column;
 }
 
-.Homecontent {
+.HomeContent {
   display: flex;
   background: linear-gradient(
     to right,
@@ -139,12 +168,12 @@ nav {
   padding: 2rem 3rem;
 }
 
-.linkslogo {
+.linksLogo {
   color: #fff;
   transition: 0.3s ease-out;
 }
 
-.linkslogo:hover {
+.linksLogo:hover {
   color: gold;
 }
 
@@ -155,7 +184,7 @@ nav {
   border-radius: 2px;
   margin-bottom: 8rem;
 }
-.sociallinks a {
+.socialLinks a {
   margin-bottom: 1.5rem;
 }
 
@@ -165,47 +194,17 @@ nav {
   align-items: center;
 }
 
-.sociallinks {
-  position: fixed;
-  bottom: 100px;
-  left: 1%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: 0.3s ease-out;
-}
-
-.mainhomecontent {
-  padding: 5rem 2rem;
-}
-
-.homesectionheader {
-  font-size: 5rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  color: #fff;
-  font-weight: bolder;
-  line-height: 5rem;
-}
-
-.homesectiondescriptoin {
-  color: #fff;
-  margin-top: 2rem;
-  font-size: 1.2rem;
-}
-
-.bookbtn {
+.submitBook {
   padding: 0.7rem 3rem;
-  background-color: rgb(7, 89, 92);
+  background-color: rgb(60, 136, 139);
   border: none;
   outline: none;
   color: #fff;
   font-weight: bold;
-  margin-top: 2rem;
+  margin-top: 3rem;
   cursor: pointer;
   border-radius: 5px;
-  box-shadow: 0 0 8px #fff;
+  box-shadow: 0 0 8px #373836;
   transition: 0.3s ease-out;
 }
 
@@ -214,7 +213,7 @@ nav {
   box-shadow: 0 0 8px #fbfe28;
 }
 
-#About {
+#about {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -229,7 +228,7 @@ nav {
   );
 }
 
-.aboutusheader {
+.aboutUs {
   font-size: 5rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -239,10 +238,10 @@ nav {
   line-height: 5rem;
 }
 
-.aboutustxt {
-  background-color: rgba(0, 0, 0, 0.288);
+.aboutContent {
+  background-color: rgba(58, 51, 51, 0.288);
   padding: 1rem 1rem;
-  width: 40rem;
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin-top: 2rem;
@@ -250,7 +249,7 @@ nav {
   font-size: 1.2rem;
 }
 
-#Contactus {
+#contact {
   width: 100%;
   height: 60vh;
   padding: 2rem 5rem;
@@ -263,7 +262,7 @@ nav {
   );
 }
 
-.contactustittle {
+.contactTitle {
   font-size: 4rem;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -273,7 +272,7 @@ nav {
   line-height: 5rem;
 }
 
-.formsection {
+.formSection {
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -282,64 +281,13 @@ nav {
   background-color: rgba(0, 0, 0, 0.288);
 }
 
-form {
-  width: 100%;
-}
-
-.labels {
-  color: #fff;
-}
-
-form .inputval {
-  width: 100%;
-  border: 0.5px solid #fff;
-  outline: none;
-  color: #fff;
-  background: transparent;
-  border-radius: 5px;
-  padding: 0.3rem 0.5rem;
-}
-
-.submitmessagebtn {
-  width: 100%;
-  padding: 0.5rem 0;
-  margin-top: 0.8rem;
-  color: #fff;
-  background-color: rgb(5, 103, 107);
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.Result {
+.result {
   height: auto;
   background-color: rgba(0, 0, 0, 0.65);
   border-radius: 10px;
   position: fixed;
   right: 2%;
   top: 15%;
-}
-
-.resultvalues {
-  width: 400px;
-  margin: 1rem 1rem;
-}
-
-.resultdescription {
-  color: #fff;
-}
-
-.resulttittle {
-  font-size: 1.2rem;
-}
-
-.resultimg {
-  width: 100%;
-  height: auto;
-}
-
-.resulttittle {
-  color: #fff;
 }
 
 #dropdown {
@@ -377,7 +325,7 @@ form .inputval {
   background-color: rgb(6, 95, 95);
 }
 
-#resultContainer {
+#containResult {
   width: 100%;
   margin-bottom: 1rem;
   background-color: rgba(5, 104, 107, 0.721);
@@ -402,4 +350,183 @@ form .inputval {
 
 .notfound {
   color: #fff;
+}
+
+form {
+  width: 100%;
+}
+
+.labels {
+  color: #fff;
+}
+
+form .inputValues {
+  width: 100%;
+  border: 0.5px solid #fff;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  border-radius: 5px;
+  padding: 0.3rem 0.5rem;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 0.8rem;
+  color: #fff;
+  background-color: rgb(5, 103, 107);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+#ourteam {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 4rem 5rem;
+  background: linear-gradient(
+    to right,
+    rgb(5, 103, 107),
+    rgba(5, 104, 107, 0.632),
+    rgba(5, 104, 107, 0.332),
+    #ffffff00
+  );
+}
+
+.ourTeam {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  font-weight: bolder;
+  line-height: 5rem;
+}
+
+.teamMembers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.memberCard {
+  width: 300px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.memberImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.memberName {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.memberRole {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.memberDescription {
+  font-size: 0.9rem;
+  color: #fff;
+  text-align: center;
+}
+
+.team-section {
+  background-image: url("https://placeholder.svg?height=1080&width=1920");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to right,
+    rgb(5, 103, 107),
+    rgba(5, 104, 107, 0.632),
+    rgba(5, 104, 107, 0.332),
+    #ffffff00
+  );
+}
+.content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+}
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.member {
+  text-align: center;
+  margin: 1rem;
+}
+.avatar {
+  width: 80px;
+  height: 80px;
+  background-color: #1e40af;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
+}
+.avatar::before {
+  content: "\1F464";
+  font-size: 3rem;
+}
+.name {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.role {
+  margin-bottom: 1rem;
+}
+.position {
+  background-color: #1e40af;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.position:hover {
+  background-color: #2563eb;
 }

@@ -8,78 +8,76 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="sty.css" />
+    <link rel="stylesheet" href="mystyle.css" />
   </head>
   <body>
     <nav>
       <div id="logo">
         <i class="fa fa-plane fa-3x logo" aria-hidden="true"></i>
-        <p class="name">TravelBloom</p>
+        <p class="lefHeaderName">TravelBloom</p>
       </div>
       <div id="links">
-        <a href="#Home">Home</a>
-        <a href="#About">About Us</a>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
         <a href="#Contactus">Contact Us</a>
       </div>
       <div id="search">
         <input
-          id="searchinput"
-          class="searchinput"
+          id="searchInput"
+          class="searchInput"
           placeholder="Enter a destination or keyword"
           type="text"
         />
-        <i class="fa fa-search searchicon" aria-hidden="true"></i>
+        <i class="fa fa-search searchIcon" aria-hidden="true"></i>
         <button id="searchbtn" class="btn">Search</button>
         <button id="clearbtn" class="btn">Clear</button>
       </div>
       <div id="dropdown">
         <div class="dropdown-header"><button id="close-btn">X</button></div>
-        <div id="resultContainer"></div>
+        <div id="containResult"></div>
       </div>
     </nav>
 
-    <div class="MainSection">
-      <div class="mainpage">
-        <div class="sociallinks">
+    <div class="mainSection">
+      <div class="mainPage">
+        <div class="socialLinks">
           <div class="verticalline"></div>
           <a href="https://twitter.com/?lang=en" target="_blank"
-            ><i class="fa fa-twitter fa-2x linkslogo" aria-hidden="true"></i
+            ><i class="fa fa-twitter fa-2x linksLogo" aria-hidden="true"></i
           ></a>
           <a href="https://www.facebook.com/" target="_blank"
-            ><i class="fa fa-facebook fa-2x linkslogo" aria-hidden="true"></i
+            ><i class="fa fa-facebook fa-2x linksLogo" aria-hidden="true"></i
           ></a>
           <a href="https://www.instagram.com/" target="_blank"
-            ><i class="fa fa-instagram fa-2x linkslogo" aria-hidden="true"></i
+            ><i class="fa fa-instagram fa-2x linksLogo" aria-hidden="true"></i
           ></a>
           <a href="https://www.youtube.com/" target="_blank"
             ><i
-              class="fa fa-youtube-play fa-2x linkslogo"
+              class="fa fa-youtube-play fa-2x linksLogo"
               aria-hidden="true"
             ></i
           ></a>
         </div>
-        <div id="Home">
-          <div class="Homecontent">
-            <div class="mainhomecontent">
-              <p class="homesectionheader">
-                Explore <br />Dream <br />Destination
-              </p>
+        <div id="home">
+          <div class="HomeContent">
+            <div class="mainHomeContent">
+              <p class="headerHome">Explore <br />Dream <br />Destination</p>
 
-              <p class="homesectiondescriptoin">
+              <p class="homeDescription">
                 It encourages exploration of unfamiliar <br />
                 territories, embracing diverse cultures and <br />
                 landscapes, while pursuing the desired <br />
                 destination that captivates the heart and <br />
                 ignites a sense of wonder.
               </p>
-              <button class="bookbtn">Book Now</button>
+              <button class="submitBook">BOOK NOW</button>
             </div>
           </div>
         </div>
-        <div id="About">
-          <p class="aboutusheader">About Us</p>
+        <div id="about">
+          <p class="aboutUs">About Us</p>
           <div>
-            <p class="aboutustxt">
+            <p class="aboutContent">
               Welcome to Our Company! We are a team of passionate individuals
               dedicated to providing excellent services/products to our
               customers. Our mission is to provide the best experience for
@@ -91,25 +89,47 @@
             </p>
           </div>
         </div>
-        <div id="Contactus">
-          <p class="contactustittle">CONTACT US</p>
-          <div class="formsection">
+
+        <section class="team-section">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>Our<br />Team</h1>
+            <div class="team-members">
+              <div class="member">
+                <div class="avatar"></div>
+                <h2 class="name">Khoa Ton</h2>
+                <p class="role">Khoa is responsible for...</p>
+                <button class="position">CEO</button>
+              </div>
+              <div class="member">
+                <div class="avatar"></div>
+                <h2 class="name">Thanh Hai</h2>
+                <p class="role">Tthanh Hai is responsible for...</p>
+                <button class="position">Team Lead</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div id="contact">
+          <p class="contactTitle">CONTACT US</p>
+          <div class="formSection">
             <form action="">
               <label class="labels" for="name">First Name</label> <br />
-              <input class="inputval" type="text" title="name" /> <br />
+              <input class="inputValues" type="text" title="name" /> <br />
 
               <label class="labels" for="email">Email</label> <br />
-              <input class="inputval" type="email" title="email" /> <br />
+              <input class="inputValues" type="email" title="email" /> <br />
               <label class="labels" for="message">Message</label> <br />
-              <input class="inputval" type="text" title="message" />
-              <button class="submitmessagebtn" type="Submit">Submit</button>
+              <input class="inputValues" type="text" title="message" />
+              <button class="submitButton" type="Submit">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="Result" id="Result"></div>
+    <div class="result" id="result"></div>
 
     <script src="travel_recommendation.js"></script>
   </body>

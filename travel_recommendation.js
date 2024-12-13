@@ -1,9 +1,9 @@
 let searchbtn = document.getElementById("searchbtn");
 let clearbtn = document.getElementById("clearbtn");
-let result = document.getElementById("resultContainer");
+let result = document.getElementById("containResult");
 let mydiv = document.getElementById("dropdown");
 let close = document.getElementById("close-btn");
-let query = document.getElementById("searchinput");
+let query = document.getElementById("searchInput");
 
 const clearsearch = () => {
   query.value = "";
